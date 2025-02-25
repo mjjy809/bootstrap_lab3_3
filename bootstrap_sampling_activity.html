@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'; color: #1f1d15; -webkit-text-stroke: #1f1d15; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'; color: #1f1d15; -webkit-text-stroke: #1f1d15; background-color: #ffffff; min-height: 15.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'; color: #1f1d15; -webkit-text-stroke: #1f1d15}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px STIXGeneral; color: #1f1d15; -webkit-text-stroke: #1f1d15}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'STIX Two Math'; color: #1f1d15; -webkit-text-stroke: #1f1d15}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #ffffff}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Bootstrap Sampling Activity with Sample List&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.square {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 2px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>line-height: 100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>vertical-align: middle;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #f9f9f9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>user-select: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: background-color 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hidden {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #ddd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Bootstrap Sampling Activity&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p&gt;Original data values: 18, 24, 4, 30, 8, 42&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="squares-container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- The 6 squares will be generated here --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="controls"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button id="flip-button"&gt;Flip Squares&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button id="reset-button" disabled&gt;Reset&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p id="instruction"&gt;Click the "Flip Squares" button to start sampling.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p id="sample-count"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p id="sample-list"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p id="result"&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Original data values</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dataValues = [18, 24, 4, 30, 8, 42];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const squaresContainer = document.getElementById('squares-container');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const flipButton = document.getElementById('flip-button');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const resetButton = document.getElementById('reset-button');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const instructionP = document.getElementById('instruction');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const sampleCountP = document.getElementById('sample-count');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const sampleListP = document.getElementById('sample-list');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const resultP = document.getElementById('result');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let bootstrapSample = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let selections = 0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Function to create the squares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function createSquares() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>squaresContainer.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>dataValues.forEach((value) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const square = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.classList.add('square');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Initially display the value</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.textContent = value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.dataset.value = value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Add click event listener for sampling with replacement</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>if (square.classList.contains('hidden') &amp;&amp; selections &lt; 6) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Reveal the value</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>square.style.color = '#000';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>square.textContent = square.dataset.value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Record the selected sample value</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>bootstrapSample.push(Number(square.dataset.value));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>selections++;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">            </span>sampleCountP.textContent = `Samples chosen:<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><i>selections</i>/6‘;<i>sampleListP</i>.<i>textContent</i>=‘<i>Selectedsamples</i>:</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">l</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">c</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">i</span></p>
+<p class="p5"><span class="s1">o</span></p>
+<p class="p5"><span class="s1">n</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">/</span></p>
+<p class="p5"><span class="s1">6</span></p>
+<p class="p5"><span class="s1">‘</span></p>
+<p class="p5"><span class="s1">;</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">a</span></p>
+<p class="p5"><span class="s1">m</span></p>
+<p class="p5"><span class="s1">p</span></p>
+<p class="p5"><span class="s1">l</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">L</span></p>
+<p class="p5"><span class="s1">i</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">P</span></p>
+<p class="p5"><span class="s1">.</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">x</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">C</span></p>
+<p class="p5"><span class="s1">o</span></p>
+<p class="p5"><span class="s1">n</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">n</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">=</span></p>
+<p class="p5"><span class="s1">‘</span></p>
+<p class="p5"><span class="s1">S</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">l</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">c</span></p>
+<p class="p5"><span class="s1">t</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">d</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">a</span></p>
+<p class="p5"><span class="s1">m</span></p>
+<p class="p5"><span class="s1">p</span></p>
+<p class="p5"><span class="s1">l</span></p>
+<p class="p5"><span class="s1">e</span></p>
+<p class="p5"><span class="s1">s</span></p>
+<p class="p5"><span class="s1">:</span></p>
+<p class="p1"><span class="s1">{bootstrapSample.join(', ')}`;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// After a short delay, hide the value and shuffle squares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>square.textContent = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>// Only shuffle if there are still selections to be made</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>if (selections &lt; 6) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>shuffleSquares();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 800);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// When 6 selections are made, calculate and display the average</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (selections === 6) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>const sum = bootstrapSample.reduce((acc, curr) =&gt; acc + curr, 0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>const average = sum / bootstrapSample.length;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>resultP.textContent = `Bootstrap Sample Average: ${average.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>instructionP.textContent = 'Sampling complete. Click Reset to try again.';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>resetButton.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>squaresContainer.appendChild(square);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Function to shuffle the squares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function shuffleSquares() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const squares = Array.from(squaresContainer.children);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>squares.sort(() =&gt; Math.random() - 0.5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>squaresContainer.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>squares.forEach(square =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>squaresContainer.appendChild(square);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Initialize squares on page load</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>createSquares();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Flip button hides the values on all squares</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>flipButton.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.square').forEach(square =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>square.textContent = ''; // hide the text to simulate a flip</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>instructionP.textContent = 'Now click on a square to select a sample. Note: The squares shuffle automatically after each selection.';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flipButton.disabled = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Reset button to restart the activity</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resetButton.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>bootstrapSample = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>selections = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>sampleCountP.textContent = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>sampleListP.textContent = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>resultP.textContent = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>instructionP.textContent = 'Click the "Flip Squares" button to start sampling.';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flipButton.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>resetButton.disabled = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>createSquares();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
